@@ -1,2 +1,4 @@
-### 事务失效
-GET http://localhost:45678/transactionproxyfailed/privateRollback?name=demoData
+### 事务回滚
+GET http://localhost:45678/transactionproxyfailed/privateRollback?name=test
+### 正常提交
+GET http://localhost:45678/transactionproxyfailed/privateRollback?name=commit
