@@ -1,0 +1,2 @@
+### 事务失效
+GET http://localhost:45678/transactionproxyfailed/privateRollback?name=demoData
