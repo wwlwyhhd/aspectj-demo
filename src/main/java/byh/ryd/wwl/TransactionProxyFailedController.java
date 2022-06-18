@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("transactionproxyfailed")
+// TODO: 2022/6/18 打开注解会,用log记录日志就会报错的
 //@Slf4j
 public class TransactionProxyFailedController {
     private static final Logger log = LoggerFactory.getLogger(TransactionProxyFailedController.class);
@@ -19,6 +20,7 @@ public class TransactionProxyFailedController {
 
     @GetMapping("privateRollback")
     public int privateRollback(@RequestParam("name") String name) {
+//        log.info("报错")
         return userService.createUserWrong1(name);
     }
 
